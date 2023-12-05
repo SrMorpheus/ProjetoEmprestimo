@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9BmNvFsMyKoXGsNmkmHyFgOrGnhl8pauvhOa1OCMLhU=",
+  "Source": "Infra.CrossCutting",
+  "BasePath": "_content/Infra.CrossCutting",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

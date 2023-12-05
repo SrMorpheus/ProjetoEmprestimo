@@ -1,4 +1,6 @@
-﻿namespace Domain.models
+﻿using Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal;
+
+namespace Domain.models
 {
     public class Usuario
     {
@@ -10,6 +12,7 @@
      public string Telefone { get; set; }
      public bool Ativo { get; set; }
     public List<Emprestimo> Emprestimos { get; set; }
+    public List<Login> Logins { get; set;  }
 
     }
 }

@@ -1825,6 +1825,87 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "7.0.5",
+          "Microsoft.EntityFrameworkCore": "7.0.14",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
+          "Swashbuckle.AspNetCore": "6.4.0"
+        },
+        "compile": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Application.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Application": "1.0.0",
+          "Microsoft.AspNetCore.OpenApi": "7.0.5",
+          "Microsoft.EntityFrameworkCore": "7.0.14",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
+          "Swashbuckle.AspNetCore": "6.4.0"
+        },
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Infra.CrossCutting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "7.0.5",
+          "Microsoft.EntityFrameworkCore": "7.0.14",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
+          "Swashbuckle.AspNetCore": "6.4.0"
+        },
+        "compile": {
+          "bin/placeholder/Infra.CrossCutting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.CrossCutting.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Web/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "7.0.5",
+          "Microsoft.EntityFrameworkCore": "7.0.14",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
+          "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
+          "Swashbuckle.AspNetCore": "6.4.0"
+        },
+        "compile": {
+          "bin/placeholder/Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Web.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -6098,10 +6179,33 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Infra.CrossCutting/1.0.0": {
+      "type": "project",
+      "path": "../Infra.CrossCutting/Infra.CrossCutting.csproj",
+      "msbuildProject": "../Infra.CrossCutting/Infra.CrossCutting.csproj"
+    },
+    "Web/1.0.0": {
+      "type": "project",
+      "path": "../EmprestimoUNIFAP/Web.csproj",
+      "msbuildProject": "../EmprestimoUNIFAP/Web.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "Application >= 1.0.0",
+      "Domain >= 1.0.0",
+      "Infra.CrossCutting >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.5",
       "Microsoft.EntityFrameworkCore >= 7.0.14",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.14",
@@ -6109,7 +6213,8 @@
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.11",
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.0",
       "NuGet.CommandLine >= 6.8.0",
-      "Swashbuckle.AspNetCore >= 6.4.0"
+      "Swashbuckle.AspNetCore >= 6.4.0",
+      "Web >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6138,7 +6243,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\NAI-UNIFAP\\Desktop\\Projeto Unifap\\EmprestimoUNIFAP\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\NAI-UNIFAP\\Desktop\\Projeto Unifap\\EmprestimoUNIFAP\\Application\\Application.csproj"
+            },
+            "C:\\Users\\NAI-UNIFAP\\Desktop\\Projeto Unifap\\EmprestimoUNIFAP\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\NAI-UNIFAP\\Desktop\\Projeto Unifap\\EmprestimoUNIFAP\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\NAI-UNIFAP\\Desktop\\Projeto Unifap\\EmprestimoUNIFAP\\EmprestimoUNIFAP\\Web.csproj": {
+              "projectPath": "C:\\Users\\NAI-UNIFAP\\Desktop\\Projeto Unifap\\EmprestimoUNIFAP\\EmprestimoUNIFAP\\Web.csproj"
+            },
+            "C:\\Users\\NAI-UNIFAP\\Desktop\\Projeto Unifap\\EmprestimoUNIFAP\\Infra.CrossCutting\\Infra.CrossCutting.csproj": {
+              "projectPath": "C:\\Users\\NAI-UNIFAP\\Desktop\\Projeto Unifap\\EmprestimoUNIFAP\\Infra.CrossCutting\\Infra.CrossCutting.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
