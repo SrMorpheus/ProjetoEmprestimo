@@ -1,6 +1,6 @@
-﻿namespace Domain.models
+﻿namespace Domain.VOs
 {
-    public class Login
+    public class LoginVO
     {
         public  int Id { get; set; }
         public string Matricula { get; set; }
